@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    
+  }
+  
+ body{
+  text-align: justify;
+ }
+
+  .container-form{
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+    text-decoration: none;
+    
+  }
+
+  .welcome-back{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .message{
+    padding: 1rem;
+    background-color: transparent;
+  }
+
+  .message h2{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+   }
+
+  .message button{
+    padding: 1rem;
+    font-weight: 400;
+    background-color:rgba(68, 184, 15, 0.863);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: white;
+    text-decoration: none;
+
+  }
+  
+  .message button:hover{
+    background-color:aquamarine ;
+  }
+
+  .formulario button{
+    padding: 1rem;
+    font-weight: 400;
+    background-color:rgba(68, 184, 15, 0.863);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: white;
+    text-decoration: none;
+  } 
+
+  
+  .formulario button:hover{
+    background-color:aquamarine ;
+  }
+
+/*Fomularion inicio de sesion*/
+  .formulario{
+    width: 450px;
+    height: 560px;
+    padding: 5px;
+    margin: 6px;
+    background-color: rgba(8, 231, 64, 0.842);
+    text-align: center;
+    text-decoration: #222;
+    border-radius: 10px;
+  }
+
+  /*Fomularion inicio de Registro usuario nuevo*/
+  .formularioR{
+    width: 450px;
+    height: 560px;
+    padding: 5px;
+    margin: 6px;
+    background-color: rgba(8, 231, 64, 0.842);
+    text-align: center;
+    text-decoration: #222;
+    border-radius: 10px;
+  }
+  .formularioR input{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+.formularioR button{
+  padding: 1rem;
+  font-weight: 400;
+  background-color:rgba(68, 184, 15, 0.863);
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-top: auto;
+  transition: all .3s ease-in;
+  color: white;
+  text-decoration: none;
+} 
+
+
+.formularioR button:hover{
+  background-color:aquamarine ;
+}
+
+.border-Icono{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+
+}
+/**/
+.cuenta-gratis{
+    padding: 2rem 0;
+}
+/**/
+.formulario input{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: white thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: white;
+}
+
+
+.formularioR input[type="button"]{
+  width: 60%;
+  margin: none;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: greenyellow;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: .4rem;
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
+}
+
+.formulario input[type="button"]{
+    width: 60%;
+    margin: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: greenyellow;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .4rem;
+    cursor: pointer;
+    color: green;
+    font-size: 20px;
+}
+
+.sign-in{
+  position:absolute;
+  opacity:0;
+  visibility: hidden;
+
+}
+
+.sign-in.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.sign-up.active{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-register .Registrar{
+display: block;
+margin:auto;
+text-align: center;
+justify-content: center;
+
+}
+
+.border .formulario input:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+
+/*Aqui es la sección de la barra de navegación*/
+
+  .header {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #1397298c;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: greenyellow;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      padding: 0 44px;
+      line-height: 40px;
+      background-image:url(/public/logo\ Ganadeando\ app.png);
+     
+    }
+  
+
+/*Seccion de actualizar Animal Bovino*/
+
+.form-register{
+  width: 600px;
+  padding: 50px;
+  margin: auto;
+  box-shadow: 7px 13px 37px #022b23;
+  margin-top: 70px;
+  border-radius: 20px;
+  font-family: 'calibri';
+  color: white;
+  background-color:rgba(0, 100, 0, 0.644)
+    
+}
+
+.form-register h4{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls{
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border: 1px solid #022b23;
+  font-family: 'calibri';
+  font-size: 18px;
+}
+
+.form-register{
+  width: 50%;
+  height: 80%;
+  line-height: 10px;
+}
+.form-register .botons{
+    padding: 1rem;
+    font-weight: 200px;
+    height: 30%;
+    width: 30%;
+    background: #13df24;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    color: greenyellow;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+
+.botons:hover{
+  text-align: center;
+  background-color:aquamarine ;
+ }
+.container{
+  width: 50%;
+  position: relative;
+}
+.mySlides{
+  display: none;
+}
+.mySlides img{
+  width: 100%;
+}
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6 ease;
+  border-radius: 0 3px 3px 0;
+  -user-select: none;
+  border:  solid #fff 2px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+  background-color: rgba(110, 228, 14, 0.8);
+}
+.elements{
+  text-align: center;
+}
+.quadrate{
+  cursor: pointer;
+  height: 4px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: greenyellow;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 2px;
+}
+.active, .quadrate:hover{
+  background-color: #fff;
+}
+@media screen and (max-width:900px) {
+  .container{
+      width: 100%;
+  }
+}
+@media screen and (max-width:500px) {
+  .container{
+      width: 100%;
+  }
+  .prev,
+  .next{
+      padding: 5px;
+  }
+}
+
+/*Esta sección es de el  autor del proyecto*/
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #43e97b;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  z-index: 100%; 
+  padding: 0;
+  line-height: normal;
+}
+
+/*Seccion de Actualizar*/
+.formActualizar{
+  background-color: rgba(0, 128, 0, 0.712);
+  width: 400%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  margin: 1em;
+ }
+.form__title{
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: .1rem;
+  color: white;
+}
+.form__parrafo{
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: .2rem;
+}
+.form__Actualizar{
+  width: 100%;
+  display: grid;
+  gap:  1em;
+  grid-auto-columns: 100%;
+
+}
+.form__input{
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .1em .1em;
+  outline: none;
+  border: none;
+  border: 1px solid #43e97b;
+  border-radius: 0.2em;
+}
+
+.formActualizar img{
+  width: 100px;
+  height: 90px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.formActualizar .btn__Actualizar{
+  padding: 1rem;
+  font-weight: 200px;
+  height: 30%;
+  width: 40%;
+  background: #13df24;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .3s ease-in;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn__Actualizar:hover{
+text-align: center;
+background-color:aquamarine ;
+}
+
+
+@media (max-width: 600px) {
+  form{
+    padding: 3.5em 1em;
+  }
+}
+
+/*Seccion Tabla*/
+ #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 170%;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+   
+  }
+  
+  #customers tr:nth-child(even){background-color: rgb(193, 228, 142);}
+  
+  #customers tr:hover {background-color:rgba(57, 165, 57, 0.699);}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: greenyellow;
+    color: black;
+  }
+
+  .Tabla img{
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .Tabla h1{
+    text-align: center;
+    text-shadow: #38f9d7;
+  }
+  
+  .formulario .botons{
+    padding: 1rem;
+  font-weight: 200px;
+  height: 30%;
+  width: 40%;
+  background: #13df24;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .3s ease-in;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  }
+
+  .button sign-up-btn{
+    background: #13df24;
+  }
+
+  .submit-button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+  }
+  
+  .submit-button.disabled {
+    background-color: #ccc; /* Color cuando está deshabilitado */
+    cursor: not-allowed; /* Indica que está deshabilitado */
+  }
+  
+  /*Seccion Conocenos*/
+  /*Esta es la seccion de conóscenos carrusel*/
+
+.body{
+  width: 100%;
+  max-width: 1450px;
+  height: 100vh;
+  padding: 40px;
+  background-image: linear-gradient(rgba(5,7,12,0.75)),(rgba(5,7,12,0.75)) ,url(public/fondo\ carrusel.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
